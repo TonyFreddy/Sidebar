@@ -213,3 +213,52 @@ main p{
     }
   }
 }
+
+.calendar{
+  width: 300px;
+  margin: 20px auto;
+  background-color: #050230;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.month h2{
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #ebe6f1;
+}
+
+.weekdays{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  background-color: #007BFF;
+  color: #ebe6f1;
+  font-weight: bold;
+}
+
+.days{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.days .day,.days .empty{
+  width: calc(100% / 7) ;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+
+.days .day{
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.days .day:hover{
+  background-color: #007BFF;
+  color: #fff;
+}
